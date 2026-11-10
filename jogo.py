@@ -7,3 +7,10 @@ for i in range(3):
     if tab[0][i] == simbolo and tab[1][i] == simbolo and tab[2][i] == simbolo:
         venceu = True
         
+# verifica as 2 diagonais
+if tab[0][0] == simbolo and tab[1][1] == simbolo and tab[2][2] == simbolo:
+    venceu = True
+if tab[0][2] == simbolo and tab[1][1] == simbolo and tab[2][0] == simbolo:
+    venceu = True
+        
+        
