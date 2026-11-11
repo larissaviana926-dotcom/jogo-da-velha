@@ -1,3 +1,11 @@
+# Parte A - Criacao da matriz do tabuleiro
+
+tab = [
+    [" ", " ", " "],
+    [" ", " ", " "],
+    [" ", " ", " "]
+]
+
 venceu = False
 
 # verifica as 3 linhas e as 3 colunas: o for troca o i sozinho (0, 1 e 2)
