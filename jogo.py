@@ -19,9 +19,13 @@ for i in range(3):
     for j in range(3):
         if tab[i][j] == " ":
             vazias = vazias + 1
-            
-            
-            
-            
-    if venceu == True:
-    print("O jogador", simbolo, "venceu!")        
+if vazias == 0 and venceu == False:
+    print("Deu empate!")
+
+# mensagem de resultado da partida
+if venceu == True:
+    print("O jogador", simbolo, "venceu!")
+
+# mensagem de resultado da partida
+if venceu == True:
+    print("O jogador", simbolo, "venceu!")
