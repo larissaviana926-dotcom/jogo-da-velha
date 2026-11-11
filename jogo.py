@@ -16,7 +16,22 @@ for i in range(3):
         print(tab[i][j], end=" ")
 
     print()
-    
+# Parte A - Validar a linha escolhida
+
+linha_valida = False
+
+while linha_valida == False:
+    entrada = input("Digite a linha (1 a 3): ")
+
+    for n in range(1, 4):
+        if entrada == str(n):
+            linha = n - 1
+            linha_valida = True
+
+    if linha_valida == False:
+        print("Linha invalida! Tente novamente.")
+
+print("Linha escolhida:", linha + 1)    
 venceu = False
 
 # verifica as 3 linhas e as 3 colunas: o for troca o i sozinho (0, 1 e 2)
