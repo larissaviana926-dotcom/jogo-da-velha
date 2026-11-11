@@ -31,7 +31,23 @@ while linha_valida == False:
     if linha_valida == False:
         print("Linha invalida! Tente novamente.")
 
-print("Linha escolhida:", linha + 1)    
+print("Linha escolhida:", linha + 1)  
+# Parte A - Validar a coluna escolhida
+
+coluna_valida = False
+
+while coluna_valida == False:
+    entrada = input("Digite a coluna (1 a 3): ")
+
+    for n in range(1, 4):
+        if entrada == str(n):
+            coluna = n - 1
+            coluna_valida = True
+
+    if coluna_valida == False:
+        print("Coluna invalida! Tente novamente.")
+
+print("Coluna escolhida:", coluna + 1)  
 venceu = False
 
 # verifica as 3 linhas e as 3 colunas: o for troca o i sozinho (0, 1 e 2)
