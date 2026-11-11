@@ -5,7 +5,18 @@ tab = [
     [" ", " ", " "],
     [" ", " ", " "]
 ]
+# Parte A - Exibir o tabuleiro
 
+print("   1 2 3")
+
+for i in range(3):
+    print(i + 1, end="  ")
+
+    for j in range(3):
+        print(tab[i][j], end=" ")
+
+    print()
+    
 venceu = False
 
 # verifica as 3 linhas e as 3 colunas: o for troca o i sozinho (0, 1 e 2)
